@@ -1,10 +1,10 @@
+# 原始类型和引用类型 （Primitive and Reference Types）
 面向对象的语言有如下几种特性：
 * 封装（Encapsulation）：数据可以和操作数据的功能组织在一起，即对象的定义
 * 聚合（Aggregation）：一个对象能够引用另一个对象
 * 继承（Inheritance）：一个新创建的对象和另一个对象拥有同样的特性，而无需显示复制其功能
 * 多态（Polymorphism）：一个接口可以被多个对象实现
 
----
 ## JavaScript数据类型
 JavaScripts虽没有类的概念，但依然存在两种*类型（types）*：原始类型（primitive）和引用类型（reference）
 * *原始类型（primitive types）*  保存为简单数据值（simple data types）
@@ -12,7 +12,6 @@ JavaScripts虽没有类的概念，但依然存在两种*类型（types）*：�
 
 > ECMAScript 2015 中引入了 [JavaScript 类](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes)，实质上是 JavaScript 现有的基于原型的继承的语法糖。类语法不会为JavaScript引入新的面向对象的继承模型。
 
----
 ## 原始类型（Primitive Types）
 JavaScript共有6种原始数据类型：
 boolean       `true`or `false` 
@@ -42,7 +41,6 @@ var flag = undefined;
 var ref; // automatically assigned undefined
 ```
 
----
 ## 引用类型（Reference Types）
 引用类型指的是JS中的对象（objects），引用值是引用类型的实例，也是对象的同义词。
 Reference values are *instances* of reference types and are synonymous with objects
@@ -124,7 +122,7 @@ An object is an unordered list of /properties/ consisting of a name (always a st
     }
     bike.brake();    //Output: Applying Brake...
     ```
----
+
 ## 鉴别数据类型
 1. 鉴别*原始类型*最佳方法是使用`typeof`操作符，如字符串，数字，布尔和undefined
 2. 鉴别`null`类型，由于`typeof null === "object"`，判断一个值是否为空的最佳方法是*直接和null比较*
@@ -157,7 +155,6 @@ An object is an unordered list of /properties/ consisting of a name (always a st
       console.log(object instanceof Object) // true
       ```
 
----
 ## 原始封装类型（Primitive Wrapper Types）
 
 为了让原始类型看上去更像引用类型，JavaScript提供了三种原始封装类型：`String` 、 `Number` 和 `Boolean` 。JavaScript会在背后创建这些对象，使得原始值能像对象一样被使用。当语句结束时，这些临时对象就会立即被销毁。
