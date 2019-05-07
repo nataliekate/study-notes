@@ -44,7 +44,7 @@ JS函数的参数保存在一个叫做`arguments`的**类数组（array-like）�
 console.log(typeof arguments); // 'object'
 ```
 
-要把arguments转换成真正的数组对象，可以使用以下方法：
+要把`arguments`转换成真正的数组对象，可以使用以下方法：
 ```javascript
 var args = Array.prototype.slice.call(arguments);
 // Using an array literal is shorter than above but allocates an empty array
