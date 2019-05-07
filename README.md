@@ -1,2 +1,3 @@
 # study-notes
-Study notes of books i read 一些读书笔记
+Study notes of books i read
+读书笔记
