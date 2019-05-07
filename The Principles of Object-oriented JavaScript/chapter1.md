@@ -1,3 +1,4 @@
+# 原始类型和引用类型 （Primitive and Reference Types）
 面向对象的语言有如下几种特性：
 * 封装（Encapsulation）：数据可以和操作数据的功能组织在一起，即对象的定义
 * 聚合（Aggregation）：一个对象能够引用另一个对象
