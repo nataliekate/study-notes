@@ -20,7 +20,33 @@ TCP/IP通常指**TCP/IP协议族**（英语：TCP/IP Protocol Suite，或TCP/IP 
 
 TCP/IP分为4层：**应用层、传输层、网络层和数据链路层**。HTTP协议处于*应用层*。
 
-HTTP请求在各层的 **封装（encapsulate）** 过程如下图：
-![tcpipstream](../assets/tcpip.png)
+## 2.简单的HTTP协议（HTTP/1.1）
 
+HTTP 协议规定，请求从客户端发出，最后服务器端响应该请求并返回。
 
+#### 请求报文
+由请求方法（GET、POST等）、请求URI、协议版本、可选的请求首部字段（Headers）和内容实体构成的。
+
+```
+POST /form/entry HTTP/1.1
+
+Host: some.website.com
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+
+name=xxx&age=20
+```
+
+#### 响应报文
+
+响应报文基本上由协议版本、状态码（表示请求成功或失败的数字代码）、用以解释状态码的原因短语、可选的响应首部字段以及实体主体构成。
+
+```
+HTTP/1.1 200 OK
+Date: Tue, 10 July 2018 06:50:15 GMT
+Content-Length: 362
+Content-Type: text/html
+
+<html>
+...
+```
